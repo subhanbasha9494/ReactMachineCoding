@@ -1,25 +1,33 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Accordian from './components/Accordian';
 
 function App() {
+  const items = [
+    {
+      title: "JavaScript Basics",
+      content: "Learn variables, functions, and loops in JavaScript."
+    },
+    {
+      title: "React.js Overview",
+      content: "Understand components, state, and props in React."
+    },
+    {
+      title: "Node.js",
+      content: "Basics of server-side development with Node.js."
+    },
+    {
+      title: "Full-Stack Development",
+      content: "Build full-stack apps with React and Node.js."
+    },
+  ];
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Machine Coding Task</h1>
+      <Accordian items={items} />
     </div>
   );
+
 }
 
 export default App;
