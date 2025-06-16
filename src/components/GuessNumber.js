@@ -22,7 +22,11 @@ const GuessTheNumber = () => {
         } else {
             alert("Too high! Try again.");
         }
-
+    }
+    const reset = () => {
+        setNumber(generateNumber());
+        setGuess('');
+        setAttempts(0);
     }
     return (
         <div>
@@ -30,6 +34,9 @@ const GuessTheNumber = () => {
             <input type="number" value={guess} onChange={(e) => setGuess(e.target.value)} placeholder="Enter your guess" />
             <div>
                 <button type="button" onClick={checkGuess}>Check Guess</button>
+            </div>
+             <div>
+                <button type="button" onClick={reset}>Reset Game</button>
             </div>
         </div>
     )
