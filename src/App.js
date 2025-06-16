@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Accordian from './components/Accordian';
+import GuessTheNumber from './components/GuessNumber';
 
 function App() {
   const items = [
@@ -25,6 +26,8 @@ function App() {
     <div className="App">
       <h1>Machine Coding Task</h1>
       <Accordian items={items} />
+      <h3>Guess the number</h3>
+      <GuessTheNumber />
     </div>
   );
 
