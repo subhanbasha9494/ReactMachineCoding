@@ -9,6 +9,7 @@ import Togglepassword from './components/Togglepassword';
 import ProgressBar from './components/Progressbar';
 import DarkMode from './components/DarkMode';
 import PasswordStrength from './components/PasswordStrength';
+import Routing from './components/Routing';
 
 function App() {
   const items = [
@@ -49,6 +50,8 @@ function App() {
       <DarkMode />
       <h4>Passowrd Strength</h4>
       <PasswordStrength />
+      <h4>Routing</h4>
+      <Routing />
     </div>
   );
 
