@@ -6,6 +6,8 @@ import Counter from './components/Counter';
 import EvenorOdd from './components/EvenorOdd';
 import Sidebar from './components/Sidebar';
 import Togglepassword from './components/Togglepassword';
+import ProgressBar from './components/Progressbar';
+import DarkMode from './components/DarkMode';
 
 function App() {
   const items = [
@@ -40,6 +42,10 @@ function App() {
       <Sidebar />
       <h4>Toggle Password</h4>
       <Togglepassword />
+      <h4>Progress Bar</h4>
+      <ProgressBar />
+      <h4>Dark Mode</h4>
+      <DarkMode />
     </div>
   );
 
