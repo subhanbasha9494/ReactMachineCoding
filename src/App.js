@@ -4,6 +4,8 @@ import Accordian from './components/Accordian';
 import GuessTheNumber from './components/GuessNumber';
 import Counter from './components/Counter';
 import EvenorOdd from './components/EvenorOdd';
+import Sidebar from './components/Sidebar';
+import Togglepassword from './components/Togglepassword';
 
 function App() {
   const items = [
@@ -34,6 +36,10 @@ function App() {
       <Counter />
       <h4>Even Or Odd</h4>
       <EvenorOdd />
+      <h4>Sidebar</h4>
+      <Sidebar />
+      <h4>Toggle Password</h4>
+      <Togglepassword />
     </div>
   );
 
