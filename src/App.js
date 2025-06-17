@@ -3,6 +3,7 @@ import './App.css';
 import Accordian from './components/Accordian';
 import GuessTheNumber from './components/GuessNumber';
 import Counter from './components/Counter';
+import EvenorOdd from './components/EvenorOdd';
 
 function App() {
   const items = [
@@ -31,6 +32,8 @@ function App() {
       <GuessTheNumber />
       <h3>Counter</h3>
       <Counter />
+      <h4>Even Or Odd</h4>
+      <EvenorOdd />
     </div>
   );
 
