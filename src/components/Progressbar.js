@@ -24,7 +24,7 @@ const ProgressBar = () => {
         <div style={{ width: '300px', margin: '20px auto' }}>
             <div style={{ height: '30px', backgroundColor: '#f3f3f3', borderRadius: '10px', overflow: 'hidden' }}>
                 <div className="progress-bar" style={{ height: '100%', width: `${progressVal}%`, backgroundColor: getBarColor() }}>
-                    <span style={{ position: 'absolute', left: '50%', transform: 'translateX(-50%)', color: '#fff', padding: '5px', fontWeight: 'bold' }}>{progressVal}%</span>
+                    <span style={{ color: '#fff', padding: '5px', fontWeight: 'bold' }}>{progressVal}%</span>
                 </div>
             </div>
             <button onClick={handlePlusBy10}>+10</button>

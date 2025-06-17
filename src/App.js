@@ -1,60 +1,38 @@
 import React from 'react';
 import './App.css';
-import Accordian from './components/Accordian';
-import GuessTheNumber from './components/GuessNumber';
-import Counter from './components/Counter';
-import EvenorOdd from './components/EvenorOdd';
+import { Routes, Route } from 'react-router-dom';
+import Home from './components/Home';
+import About from './components/About';
 import Sidebar from './components/Sidebar';
+import Accordian from './components/Accordian';
+import Counter from './components/Counter';
+import GuessTheNumber from './components/GuessNumber';
+import EvenorOdd from './components/EvenorOdd';
 import Togglepassword from './components/Togglepassword';
 import ProgressBar from './components/Progressbar';
 import DarkMode from './components/DarkMode';
 import PasswordStrength from './components/PasswordStrength';
-import Routing from './components/Routing';
 
-function App() {
-  const items = [
-    {
-      title: "JavaScript Basics",
-      content: "Learn variables, functions, and loops in JavaScript."
-    },
-    {
-      title: "React.js Overview",
-      content: "Understand components, state, and props in React."
-    },
-    {
-      title: "Node.js",
-      content: "Basics of server-side development with Node.js."
-    },
-    {
-      title: "Full-Stack Development",
-      content: "Build full-stack apps with React and Node.js."
-    },
-  ];
+const App = () => {
   return (
-    <div className="App">
-      <h1>Machine Coding Task</h1>
-      <Accordian items={items} />
-      <h3>Guess the number</h3>
-      <GuessTheNumber />
-      <h3>Counter</h3>
-      <Counter />
-      <h4>Even Or Odd</h4>
-      <EvenorOdd />
-      <h4>Sidebar</h4>
+    <div className="app-container">
       <Sidebar />
-      <h4>Toggle Password</h4>
-      <Togglepassword />
-      <h4>Progress Bar</h4>
-      <ProgressBar />
-      <h4>Dark Mode</h4>
-      <DarkMode />
-      <h4>Passowrd Strength</h4>
-      <PasswordStrength />
-      <h4>Routing</h4>
-      <Routing />
+      <div className="content">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/accordian" element={<Accordian />} />
+          <Route path="/counter" element={<Counter />} />
+          <Route path="/guess-number" element={<GuessTheNumber />} />
+          <Route path="/even-odd" element={<EvenorOdd />} />
+          <Route path="/toggle-password" element={<Togglepassword />} />
+          <Route path="/progress-bar" element={<ProgressBar />} />
+          <Route path="/dark-mode" element={<DarkMode />} />
+          <Route path="/password-strength" element={<PasswordStrength />} />
+        </Routes>
+      </div>
     </div>
-  );
-
+  )
 }
 
 export default App;
