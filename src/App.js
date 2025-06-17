@@ -8,6 +8,7 @@ import Sidebar from './components/Sidebar';
 import Togglepassword from './components/Togglepassword';
 import ProgressBar from './components/Progressbar';
 import DarkMode from './components/DarkMode';
+import PasswordStrength from './components/PasswordStrength';
 
 function App() {
   const items = [
@@ -46,6 +47,8 @@ function App() {
       <ProgressBar />
       <h4>Dark Mode</h4>
       <DarkMode />
+      <h4>Passowrd Strength</h4>
+      <PasswordStrength />
     </div>
   );
 
