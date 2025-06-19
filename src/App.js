@@ -12,6 +12,11 @@ import Togglepassword from './components/Togglepassword';
 import ProgressBar from './components/Progressbar';
 import DarkMode from './components/DarkMode';
 import PasswordStrength from './components/PasswordStrength';
+import ChipsInput from './components/ChipInput';
+import GroupBy from './components/GroupBy';
+import LargestNumberFormed from './components/LargestNumberFormed';
+import CountVowels from './components/CountVowels';
+import Oncefn from './components/Oncefn';
 
 const App = () => {
   return (
@@ -29,6 +34,11 @@ const App = () => {
           <Route path="/progress-bar" element={<ProgressBar />} />
           <Route path="/dark-mode" element={<DarkMode />} />
           <Route path="/password-strength" element={<PasswordStrength />} />
+          <Route path="/todo-list" element={<ChipsInput />} />
+          <Route path="/groupby" element={<GroupBy />} />
+          <Route path="/largest-number" element={<LargestNumberFormed />} />
+          <Route path="/vowel" element={<CountVowels />} />
+          <Route path="/once" element={<Oncefn  />} />
         </Routes>
       </div>
     </div>

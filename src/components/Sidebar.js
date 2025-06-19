@@ -25,6 +25,11 @@ const Sidebar = () => {
                             <li><Link to="/progress-bar" className="nav-item">Progress Bar</Link></li>
                             <li><Link to="/dark-mode" className="nav-item">Dark Mode</Link></li>
                             <li><Link to="/password-strength" className="nav-item">Password Strength</Link></li>
+                            <li><Link to="/todo-list" className="nav-item">Todo List</Link></li>
+                            <li><Link to="/groupby" className="nav-item">Group By</Link></li>
+                            <li><Link to="/largest-number" className="nav-item">Largest Number</Link></li>
+                            <li><Link to="/vowel" className="nav-item">Count Vowels</Link></li>
+                            <li><Link to="/once" className="nav-item">Once Function</Link></li>
                         </ul>
                     </nav>)}
         </div>
