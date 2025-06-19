@@ -30,6 +30,8 @@ const Sidebar = () => {
                             <li><Link to="/largest-number" className="nav-item">Largest Number</Link></li>
                             <li><Link to="/vowel" className="nav-item">Count Vowels</Link></li>
                             <li><Link to="/once" className="nav-item">Once Function</Link></li>
+                            <li><Link to="/curry" className="nav-item">Currying</Link></li>
+                            <li><Link to="/previous" className="nav-item">Previous Value</Link></li>
                         </ul>
                     </nav>)}
         </div>

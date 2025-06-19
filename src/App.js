@@ -17,6 +17,8 @@ import GroupBy from './components/GroupBy';
 import LargestNumberFormed from './components/LargestNumberFormed';
 import CountVowels from './components/CountVowels';
 import Oncefn from './components/Oncefn';
+import Currying from './components/Currying';
+import PreviousValue from './components/PreviousValue';
 
 const App = () => {
   return (
@@ -39,6 +41,8 @@ const App = () => {
           <Route path="/largest-number" element={<LargestNumberFormed />} />
           <Route path="/vowel" element={<CountVowels />} />
           <Route path="/once" element={<Oncefn  />} />
+          <Route path="/curry" element={<Currying  />} />
+          <Route path="/previous" element={<PreviousValue  />} />
         </Routes>
       </div>
     </div>
