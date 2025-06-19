@@ -19,6 +19,8 @@ import CountVowels from './components/CountVowels';
 import Oncefn from './components/Oncefn';
 import Currying from './components/Currying';
 import PreviousValue from './components/PreviousValue';
+import CustomSort from './components/Customsort';
+import Anagram from './components/Anagram';
 
 const App = () => {
   return (
@@ -43,6 +45,8 @@ const App = () => {
           <Route path="/once" element={<Oncefn  />} />
           <Route path="/curry" element={<Currying  />} />
           <Route path="/previous" element={<PreviousValue  />} />
+          <Route path="/sort" element={<CustomSort />} />
+          <Route path="/anagram" element={<Anagram />} />
         </Routes>
       </div>
     </div>

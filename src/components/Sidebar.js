@@ -32,6 +32,8 @@ const Sidebar = () => {
                             <li><Link to="/once" className="nav-item">Once Function</Link></li>
                             <li><Link to="/curry" className="nav-item">Currying</Link></li>
                             <li><Link to="/previous" className="nav-item">Previous Value</Link></li>
+                            <li><Link to="/sort" className="nav-item">Custom Sort</Link></li>
+                            <li><Link to="/anagram" className="nav-item">Anagram</Link></li>
                         </ul>
                     </nav>)}
         </div>
