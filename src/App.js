@@ -21,6 +21,9 @@ import Currying from './components/Currying';
 import PreviousValue from './components/PreviousValue';
 import CustomSort from './components/Customsort';
 import Anagram from './components/Anagram';
+import Zigzag from './components/Zigzag';
+import Blogpost from './components/Blogpost';
+import Chunkarray from './components/Chunkarray';
 
 const App = () => {
   return (
@@ -47,6 +50,10 @@ const App = () => {
           <Route path="/previous" element={<PreviousValue  />} />
           <Route path="/sort" element={<CustomSort />} />
           <Route path="/anagram" element={<Anagram />} />
+          <Route path="/zigzag" element={<Zigzag />} />
+          <Route path="/blog" element={<Blogpost />} />
+          <Route path="/chunk" element={<Chunkarray />} />
+          {/* Fallback route to Home if no match is found */}
         </Routes>
       </div>
     </div>

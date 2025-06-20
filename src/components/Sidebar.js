@@ -34,6 +34,9 @@ const Sidebar = () => {
                             <li><Link to="/previous" className="nav-item">Previous Value</Link></li>
                             <li><Link to="/sort" className="nav-item">Custom Sort</Link></li>
                             <li><Link to="/anagram" className="nav-item">Anagram</Link></li>
+                            <li><Link to="/zigzag" className="nav-item">Zigzag</Link></li>
+                            <li><Link to="/blog" className="nav-item">Blog Post</Link></li>
+                            <li><Link to="/chunk" className="nav-item">Chunk Array</Link></li>
                         </ul>
                     </nav>)}
         </div>
